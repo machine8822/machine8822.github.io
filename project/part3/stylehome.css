@@ -8,6 +8,12 @@ body {
     margin: auto;
 }
 
+#main-content img{
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+}
+
 #main-header{
     background:green;
     padding:5px;
@@ -18,6 +24,7 @@ body {
 #main-nav li {
     list-style-type: none;
     display: inline-block;
+    text-align: center;
 }
 
 #main-nav a {
