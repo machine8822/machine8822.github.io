@@ -41,6 +41,8 @@ body {
     background-color: aqua;
     width: auto;
     border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #main-nav a {
