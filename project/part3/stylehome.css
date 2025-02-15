@@ -35,7 +35,7 @@ body {
     margin:10px;
     
 }
-
+/*
 #main-nav li :hover{
     display:block;
     background-color: aqua;
@@ -44,7 +44,7 @@ body {
     margin-left: 0px;
     margin-right: 0px;
 }
-
+*/
 #main-nav a {
     text-decoration: none;
     padding: 5px;
@@ -63,6 +63,13 @@ body {
     }
     #main-nav li {
         flex: 1;
+    }
+    #main-nav a{
+        border-bottom: 2px solid transparent;
+    }
+    #main-nav a:hover {
+        border-bottom: 2px solid black;
+        
     }
 }
 
