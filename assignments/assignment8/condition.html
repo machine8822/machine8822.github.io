@@ -22,8 +22,8 @@
                     </section>
                     
                     <ul id="main-nav-items" class="hidden">
-                        <li><a href="javascript:exercise1()">Exercise 1</a></li>
-                        <li><a href="#">Exercise 2</a></li>
+                        <li><a href="javascript:exercise1Dis()">Exercise 1</a></li>
+                        <li><a href="javascript:exercise2Dis()">Exercise 2</a></li>
                     </ul>
                     <!---
                     <section id="main-nav-items">
@@ -35,11 +35,38 @@
             </header>
             <main id="main-content">
                 <div class="flex-container">
-                    <section class="traveling">
-                        <p>Traveling</p>
+                    <section id="traveling" class="hidden-travel">
+                        <h3>Traveling</h3>
+                        <div id="sub-header">
+                            <p>Enter your mode of Transportation</p>
+                        </div>
+                        <section id="text-loc">
+                            <label for="txt-transport"></label>
+                            <input type="text" id="txt-transport">
+                            <p id="message"></p>
+                        </section>
+                        <section id="bike-pic">
+                            <img src="bike.jpg" id="bike-test" alt="Not Working">
+                        </section>
+                        <section id="scooter-pic">
+                            <img src="scooter.png" id="scooter-test" alt="Not Working">
+                        </section>
+                        <section id="car-pic">
+                            <img src="car.webp" id="car-test" alt="Not Working">
+                        </section>
+                        <section id="skateboard-pic">
+                            <img src="skateboard.webp" id="skateboard-test" alt="Not Working">
+                        </section>
+
                     </section>
-                    <section class="picture-choose">
-                        <p>Picture choose</p>
+                    <section id="picture-choose" class="hidden-picture-choose">
+                        <h3>Picture Choose</h3>
+                        <section>
+                            <button id="red" class="red-button">Red</button>
+                            <button id="green" class="green-button">Green</button>
+                            <button id="blue" class="blue-button">Blue</button>
+                        </section>
+                        <div id="heart"></div>
                     </section>
                 </div>
             </main>
