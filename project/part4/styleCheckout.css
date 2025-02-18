@@ -111,6 +111,11 @@ body {
 #main-nav a:hover {
     border-bottom: 2px solid black;
 }
+#final-total {
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media (min-width: 900px){
     #main-nav ul, .flex-container{

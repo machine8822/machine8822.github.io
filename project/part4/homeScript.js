@@ -164,16 +164,23 @@ let check = "Checkout";
 function tableInput() {
     let iN = document.getElementById("item-name");
     let iP = document.getElementById("item-price");
+    let fT = document.getElementById("final-total");
+
     let test = "";
     let final = "";
+    let final2 = 0;
 
     for(let i=0; i<cartArray.length; i++){
         test = test + "\n" + cartArray[i][0];
         final = final + "\n"+ cartArray[i][1];
-        alert(final);
+        let num = cartArray[i][1];
+        final2 = parseInt(final2) + parseInt(num);
+        //alert(final2);
     }
-    iN.innerHTML = "Final total: " + test;
+    iN.innerHTML = test;
     iP.innerHTML = final;
+    fT.innerHTML = "Total Price: " + final2;
+    
 }
 
 let cartArray = [];
