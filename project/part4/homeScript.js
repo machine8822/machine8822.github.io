@@ -243,7 +243,7 @@ window.onload = () => {
         document.getElementById("flower").onpointerdown = addCart;
    }
    if(title.localeCompare(check) === 0) {
-    alert("checkout");
+    //alert("checkout");
     document.getElementById("checkout").onpointerdown = buyCart;
     tableInput();
    }
