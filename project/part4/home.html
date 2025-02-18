@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <title>Home</title>
+        <title id="title">Home</title>
         <link rel="stylesheet" href="stylehome.css" />
         <script src="homeScript.js"></script>
     </head>
@@ -19,6 +19,13 @@
                         <li><a href="plants.html">Plants</a></li>
                         <li><a href="checkout.html">Checkout</a></li>
                     </ul>
+                    <div id="cart-toggle">
+                        <div id="arrow2"></div>
+                        <div id="cart" class="hidden-cart">
+                            <p id="cart-txt">No items in Cart</p>
+                            <button id="reset" class="empty-cart">Empty Cart</button>
+                        </div>
+                    </div>
                 </nav>
             </header>
             <main id="main-content">

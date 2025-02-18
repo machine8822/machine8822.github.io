@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <title>Plants</title>
+        <title id="title">Plants</title>
         <link rel="stylesheet" href="styleItems.css" />
+        <script src="homeScript.js"></script>
     </head>
     <body>
         <div id="content">
@@ -18,6 +19,13 @@
                         <li><a href="equipment.html">Equipment</a></li>
                         <li><a href="checkout.html">Checkout</a></li>
                     </ul>
+                    <div id="cart-toggle">
+                        <div id="arrow2"></div>
+                        <div id="cart" class="hidden-cart">
+                            <p id="cart-txt">No items in Cart</p>
+                            <button id="reset" class="empty-cart">Empty Cart</button>
+                        </div>
+                    </div>
                 </nav>
             </header>
             <main id="main-content">
@@ -25,32 +33,32 @@
                     <tr>
                         <th>Items</th>
                         <th>Description</th>
-                        <th>Price</th>
+                        <th>Price $</th>
                         <th>Add to Cart</th>
                     </tr>
                     <tr>
-                        <td>Mulch<img src="images/placeholder.jpg" alt="Not working"></td>
-                        <td>Description of mulch</td>
-                        <td>Price</td>
-                        <td>Add to Cart</td>
+                        <td>Mulch<img src="images/mulch.png" alt="Not working"></td>
+                        <td>Useful for helping moderate temperature and prevent weeds from growing.</td>
+                        <td>3.99</td>
+                        <td><button id="mulch" class="mulch-cart">Add to Cart</button></td>
                     </tr>
                     <tr>
-                        <td>Pine Straw<img src="images/placeholder.jpg" alt="Not working"></td>
-                        <td>Description of pine straw</td>
-                        <td>Price</td>
-                        <td>Add to Cart</td>
+                        <td>Pine Straw<img src="images/straw.png" alt="Not working"></td>
+                        <td>Useful for fertilizing grass.</td>
+                        <td>4.99</td>
+                        <td><button id="straw" class="straw-cart">Add to Cart</button></td>
                     </tr>
                     <tr>
-                        <td>Pine Tree<img src="images/placeholder.jpg" alt="Not working"></td>
-                        <td>Description of pine tree</td>
-                        <td>Price</td>
-                        <td>Add to Cart</td>
+                        <td>Pine Tree<img src="images/tree.png" alt="Not working"></td>
+                        <td>Tall, bushy tree. Commonly used as Christmas trees.</td>
+                        <td>32.99</td>
+                        <td><button id="tree" class="tree-cart">Add to Cart</button></td>
                     </tr>
                     <tr>
-                        <td>Flowers<img src="images/placeholder.jpg" alt="Not working"></td>
-                        <td>Description of Flowers</td>
-                        <td>Price</td>
-                        <td>Add to Cart</td>
+                        <td>Flowers<img src="images/flower.jpg" alt="Not working"></td>
+                        <td>Roses are our speciality, especially around this time.</td>
+                        <td>6.99</td>
+                        <td><button id="flower" class="flower-cart">Add to Cart</button></td>
                     </tr>
                 </table>
             </main>
