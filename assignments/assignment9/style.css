@@ -32,6 +32,16 @@ body {
 }
 #main-content {
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+#whole-stairs {
+    background-color: blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 300px;
 }
 
 #main-footer {

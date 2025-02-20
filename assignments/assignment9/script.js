@@ -3,15 +3,22 @@ function drawStairs() {
     alert("Drawing stairs beg");
 
     let temp = "";
-    let stairDis = document.getElementById("whole-stairs");
+    const staDisplay = document.getElementById("main-content");
+    let stairDis = document.getElementById("txt-stairs");
+
+    staDisplay.classList.toggle("hidden");
 
     for(let i=0; i<stairArray.length; i++) {
-        stairArray[i] = "|__|";
+        stairArray[i] = "ab";
     }
 
     for(let i=0; i<stairArray.length; i++) {
-        stairDis.innerHTML = stairDis + "\n" + stairArray[i];
+        temp = temp + "\n" + stairArray[i];
+        console.log(temp);
+        alert("logging");
     }
+    stairDis = temp;
+
 
     alert("Done Drawing stairs");
 }
