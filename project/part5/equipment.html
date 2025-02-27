@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title id="title">Equipment</title>
+        <link rel="stylesheet" href="styleItems.css" />
+        <script src="homeScript.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <h1>King Landscaping</h1>
+                <nav id="main-nav">
+                    <div id="nav-toggle">
+                        <div id="arrow"></div>
+                    </div>
+                    <ul id="main-nav-items" class="hidden">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutStore.html">About Store</a></li>
+                        <li><a href="plants.html">Plants</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                    <div id="cart-toggle">
+                        <div id="arrow2"></div>
+                        <div id="cart" class="hidden-cart">
+                            <p id="cart-txt">No items in Cart</p>
+                            <button id="reset" class="empty-cart">Empty Cart</button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main id="main-content">
+                <table id="table">
+                    <tr>
+                        <th>Items</th>
+                        <th>Description</th>
+                        <th>Price $</th>
+                        <th>Add to Cart</th>
+                    </tr>
+                    <tr>
+                        <td>Mower<img src="images/mower.png" alt="Not working"></td>
+                        <td>Useful for cutting the grass when it gets too tall.</td>
+                        <td>129.99</td>
+                        <td><button id="mower" class="mower-cart">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Rake<img src="images/rake.png" alt="Not working"></td>
+                        <td>Useful for moving leaves into a pile.</td>
+                        <td>9.99</td>
+                        <td><button id="rake" class="rake-cart">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Edger<img src="images/edger.png" alt="Not working"></td>
+                        <td>Useful for trimming up the edge of the grass.</td>
+                        <td>99.99</td>
+                        <td><button id="edger" class="edger-cart">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Leaf Blower<img src="images/leafblower.png" alt="Not working"></td>
+                        <td>Useful for blowing leaves whereever you need to.</td>
+                        <td>38.99</td>
+                        <td><button id="leaf" class="leaf-cart">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Spreader<img src="images/spreader.png" alt="Not working"></td>
+                        <td>Useful for spreading pesticide and other chemicals over a wide area</td>
+                        <td>49.99</td>
+                        <td><button id="spread" class="spread-cart">Add to Cart</button></td>
+                    </tr>
+                </table>
+            </main>
+        </div>
+    </body>
+</html>
