@@ -27,8 +27,21 @@ body {
 .col1of5 {
     background-color: orangered;
 }
+.col1of5 img {
+    width: 200px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Typography */
+.col1of5 a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Popup Window */
+
 
 
 /* Larger Resolutions */

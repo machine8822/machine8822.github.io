@@ -10,10 +10,19 @@ class Pizza {
     }
 }
 
+//Change the information in the popup with data in the array
+const Haw = () => {
+    alert("Display Hawaiian")
+
+
+}
+
+function testing() {
+    alert("Testing");
+}
 
 window.onload = () => {
     let pizzas = [];
-
 
 
     
