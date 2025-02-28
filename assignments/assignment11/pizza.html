@@ -3,6 +3,7 @@
     <head>
         <title>Pizzas</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="script.js"></script>
     </head>
     <body>
@@ -14,40 +15,46 @@
             <main id="main-content">
                 <div class="flex-container">
                     <section class="col1of5 column">
-                        <a href="javascript:Haw()">
+                        <a href="javascript:haw()">
                             <h4>Hawaiian</h4>
-                            <div><img src="images/placeholder.jpg"></div>
+                            <div><img src="images/hawaiianPizza.jpeg"></div>
                         </a>
                     </section>
                     <section class="col1of5 column">
-                        <a href="javascript:testing()">
-                            <h4>Buffalo Chicken Ranch</h4>
-                            <div><img src="images/placeholder.jpg"></div>
+                        <a href="javascript:pep()">
+                            <h4>Pepperoni</h4>
+                            <div><img src="images/pepperoniPizza.jpeg"></div>
                         </a>
                     </section>
                     <section class="col1of5 column">
-                        <a href="javascript:testing()">
-                            <h4>Buffalo Chicken Ranch</h4>
-                            <div><img src="images/placeholder.jpg"></div>
+                        <a href="javascript:bbq()">
+                            <h4>Barbeque Chicken</h4>
+                            <div><img src="images/bbqPizza.jpeg"></div>
                         </a>
                     </section>
                     <section class="col1of5 column">
-                        <a href="javascript:testing()">
-                            <h4>Buffalo Chicken Ranch</h4>
-                            <div><img src="images/placeholder.jpg"></div>
+                        <a href="javascript:sup()">
+                            <h4>Supreme</h4>
+                            <div><img src="images/supremePizza.jpg"></div>
                         </a>
                     </section>
                     <section class="col1of5 column">
-                        <a href="javascript:testing()">
-                            <h4>Buffalo Chicken Ranch</h4>
-                            <div><img src="images/placeholder.jpg"></div>
+                        <a href="javascript:veg()">
+                            <h4>Veggie</h4>
+                            <div><img src="images/veggiePizza.jpg"></div>
                         </a>
                     </section>
                 </div>
                 
-                <div id="pop" class="popup">
-                    <div><img src="" id="imgpopup"></div>
-                </div>
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                      <div class="w3-container">
+                        <span onclick="document.getElementById('id01').style.display='none'; clearPopup()" class="w3-button w3-display-topright">&times;</span>
+                        <section id="pizza-list"></section>
+                      </div>
+                    </div>
+                  </div>
+                
 
             </main>
             <footer id="main-footer">&copy;machineking.com</footer>

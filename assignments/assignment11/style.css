@@ -19,8 +19,8 @@ body {
     text-align: center;
 }
 .column {
-    padding: 20px;
-    margin: 10px;
+    padding: 15px;
+    margin: 5px;
     border-radius: 10px;
     text-align: center;
 }
@@ -41,11 +41,28 @@ body {
 }
 
 /* Popup Window */
-
+.pop {
+    background-color: orange;
+    margin: 10px;
+}
+.pop h3 {
+    margin: 10px;
+}
+.pop li {
+    list-style-type: none;
+}
+.pop img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+}
 
 
 /* Larger Resolutions */
-@media (min-width: 900px){
+@media (min-width: 1200px){
     .flex-container{
         display: flex;
     }
