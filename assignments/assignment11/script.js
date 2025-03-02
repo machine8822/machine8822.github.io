@@ -65,12 +65,12 @@ const veg = () => {
     disPop();
 }
 function disPop() {
-    alert("Displaying Popup");
+    //alert("Displaying Popup");
     document.getElementById("id01").style.display="block";
 }
 
 const clearPopup = () => {
-    alert("Clearing popup data");
+    //alert("Clearing popup data");
     while (popSection.hasChildNodes()){
         popSection.removeChild(popSection.firstChild);
     }

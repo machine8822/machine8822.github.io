@@ -47,9 +47,12 @@ body {
 }
 .pop h3 {
     margin: 10px;
+    background-color: red;
 }
 .pop li {
     list-style-type: none;
+    margin: 20px;
+    font-size: 16px;
 }
 .pop img {
     width: 300px;
@@ -58,6 +61,17 @@ body {
     display: block;
     margin-left: auto;
     padding: 10px;
+    animation-name: spin;
+    animation-duration: 1s;
+}
+/* Spin Animation */
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 
