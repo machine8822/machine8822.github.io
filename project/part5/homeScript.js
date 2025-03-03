@@ -24,21 +24,18 @@ const toggleCartDropdown = () => {
 
 //Add item to cart ased on button pushed
 function addCart() {
-    const mow = sessionStorage.mowerValue;
-    const rak = sessionStorage.rakeValue;
-    const edg = sessionStorage.edgerValue;
-    const lea = sessionStorage.leafValue;
-    const spr = sessionStorage.spreadValue;
+    const mow = 129.99;
+    const rak = 9.99;
+    const edg = 99.99;
+    const lea = 38.99
+    const spr = 49.99;
 
-    const mul = sessionStorage.mulchValue;
-    const str = sessionStorage.strawValue;
-    const tre = sessionStorage.treeValue;
-    const flo = sessionStorage.flowerValue;
-
-    
+    const mul = 3.99;
+    const str = 4.99;
+    const tre = 32.99;
+    const flo = 6.99;
 
     const cartMessage = document.getElementById("cart-txt");
-
 
     //When mower button is clicked
     if(title.localeCompare(equip) === 0 ){
@@ -61,7 +58,7 @@ function addCart() {
     }
 
     document.querySelector(".rake-cart").onclick = function (){
-        let temp = ["Rake", mow];
+        let temp = ["Rake", rak];
         let test = "";
         //alert(rak);
         cartArray.push(temp);
@@ -73,7 +70,7 @@ function addCart() {
 
     }
     document.querySelector(".edger-cart").onclick = function (){
-        let temp = ["Edger", mow];
+        let temp = ["Edger", edg];
         let test = "";
         cartArray.push(temp);
         for(let i=0; i<cartArray.length; i++){
@@ -84,7 +81,7 @@ function addCart() {
 
     }
     document.querySelector(".leaf-cart").onclick = function (){
-        let temp = ["Leaf Blower", mow];
+        let temp = ["Leaf Blower", lea];
         let test = "";
         cartArray.push(temp);
         for(let i=0; i<cartArray.length; i++){
@@ -95,7 +92,7 @@ function addCart() {
 
     }
     document.querySelector(".spread-cart").onclick = function (){
-        let temp = ["Spreader", mow];
+        let temp = ["Spreader", spr];
         let test = "";
         cartArray.push(temp);
         for(let i=0; i<cartArray.length; i++){
@@ -108,7 +105,7 @@ function addCart() {
 }
 if(title.localeCompare(plants) === 0 ){
     document.querySelector(".mulch-cart").onclick = function (){
-        let temp = ["Mulch", mow];
+        let temp = ["Mulch", mul];
         let test = "";
         cartArray.push(temp);
         for(let i=0; i<cartArray.length; i++){
@@ -119,7 +116,7 @@ if(title.localeCompare(plants) === 0 ){
 
     }
     document.querySelector(".straw-cart").onclick = function (){
-        let temp = ["Pine Straw", mow];
+        let temp = ["Pine Straw", str];
         let test = "";
         cartArray.push(temp);
         for(let i=0; i<cartArray.length; i++){
@@ -130,7 +127,7 @@ if(title.localeCompare(plants) === 0 ){
 
     }
     document.querySelector(".tree-cart").onclick = function (){
-        let temp = ["Pine Tree", mow];
+        let temp = ["Pine Tree", tre];
         let test = "";
         cartArray.push(temp);
         for(let i=0; i<cartArray.length; i++){
@@ -141,7 +138,7 @@ if(title.localeCompare(plants) === 0 ){
 
     }
     document.querySelector(".flower-cart").onclick = function (){
-        let temp = ["Flowers", mow];
+        let temp = ["Flowers", flo];
         let test = "";
         cartArray.push(temp);
         for(let i=0; i<cartArray.length; i++){
@@ -174,12 +171,12 @@ function tableInput() {
         test = test + "\n" + cartArray[i][0];
         final = final + "\n"+ cartArray[i][1];
         let num = cartArray[i][1];
-        final2 = parseInt(final2) + parseInt(num);
+        final2 = parseFloat(final2) + parseFloat(num);
         //alert(final2);
     }
     iN.innerHTML = test;
     iP.innerHTML = final;
-    fT.innerHTML = "Total Price: " + final2;
+    fT.innerHTML = "Total Price: $" + final2;
     
 }
 
