@@ -1,0 +1,135 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: gray; */
+    background-image: url("images/lawn.webp");
+}
+
+#content {
+    width: 85%;
+    margin: auto;
+}
+
+#main-content table{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    border-collapse: collapse;
+    padding:50px;
+    display: flex;
+    th{
+        background-color: aqua;
+        height: 50px;
+    }
+    td{
+        padding: 20px;
+        font-size: 20px;
+        background-color: antiquewhite;
+    }
+    th, td{
+        border: 1px solid;
+    }
+}
+
+#cart {
+    height:auto;
+    width: 200px;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-bottom: 5px;
+    
+}
+
+
+#main-content img{
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-content button{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#main-header{
+    background:green;
+    padding:5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Main Navigation */
+#main-nav li {
+    list-style-type: none;
+    
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    margin:10px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    padding: 5px;
+    color:black;
+    font-size: larger;
+}
+
+/* Dropdown */
+#arrow {
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: black transparent transparent transparent;
+}
+#arrow2 {
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: red transparent transparent transparent;
+    margin-left: 95%;
+}
+.hidden {
+    display: none;
+}
+.hidden-cart {
+    display: none;
+}
+
+/* Typography */
+#main-header h1{
+    text-align: center;
+}
+#main-nav a:hover {
+    border-bottom: 2px solid black;
+}
+#final-total {
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+@media (min-width: 900px){
+    #main-nav ul, .flex-container{
+        display:flex;
+    }
+    #main-nav li {
+        flex: 1;
+    }
+    #main-nav a {
+        border-bottom: 2px solid transparent;
+    }
+    #arrow {
+        display: none;
+    }
+}
