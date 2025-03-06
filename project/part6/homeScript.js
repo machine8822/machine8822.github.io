@@ -181,14 +181,20 @@ function tableInput() {
 }
 
 const getEquip = async () => {
-    const url = "";
-}
+    const url = "https://github.com/machine8822/machine8822.github.io/json/items.json";
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch (error) {
+        console.log(error);
+    }
+};
 //Display for equip
 const showEquip = async () => {
     let test = getEquip();
-    
+
     console.log(test);
-}
+};
 
 let cartArray = [];
 //let cartTotal = [];
