@@ -180,8 +180,11 @@ function tableInput() {
     
 }
 
+
+
 const getEquip = async () => {
-    const url = "https://github.com/machine8822.github.io/json/items.json";
+    const url = "https://machine8822.github.io/json/items.json";
+    
     try {
         const response = await fetch(url);
         return await response.json();
@@ -191,9 +194,9 @@ const getEquip = async () => {
 };
 //Display for equip
 const showEquip = async () => {
-    let test = getEquip();
+    let what = getEquip();
 
-    console.log(test);
+    console.log(what);
 };
 
 let cartArray = [];
@@ -213,7 +216,7 @@ window.onload = () => {
     cartTotal = localStorage.getItem("cart-out");
     cartTesting = JSON.parse(cartTotal);
 
-    showEquip();
+    //showEquip();
 
 
     //alert(cartTesting.length);
@@ -244,11 +247,12 @@ window.onload = () => {
    // document.getElementById("mower").onpointerdown = addCart;
    if(title.localeCompare(equip) === 0 ){
     //alert("equipment");
-    document.getElementById("mower").onpointerdown = addCart;
-    document.getElementById("rake").onpointerdown = addCart;
-    document.getElementById("edger").onpointerdown = addCart;
-    document.getElementById("leaf").onpointerdown = addCart;
-    document.getElementById("spread").onpointerdown = addCart;
+    showEquip();
+    //document.getElementById("mower").onpointerdown = addCart;
+    //document.getElementById("rake").onpointerdown = addCart;
+    //document.getElementById("edger").onpointerdown = addCart;
+    //document.getElementById("leaf").onpointerdown = addCart;
+    //document.getElementById("spread").onpointerdown = addCart;
    }
    if(title.localeCompare(plants) === 0) {
     //alert("plants");

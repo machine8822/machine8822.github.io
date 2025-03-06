@@ -10,26 +10,8 @@ body {
     margin: auto;
 }
 
-#main-content table{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-    border-collapse: collapse;
-    padding:50px;
-    display: flex;
-    th{
-        background-color: aqua;
-        height: 50px;
-    }
-    td{
-        padding: 20px;
-        font-size: 20px;
-        background-color: antiquewhite;
-    }
-    th, td{
-        border: 1px solid;
-    }
+#main-content h2{
+    text-align: center;
 }
 #cart {
     height:auto;
