@@ -12,6 +12,11 @@ body {
 
 #main-content h2{
     text-align: center;
+    background-color: yellowgreen;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
 }
 #cart {
     height:auto;

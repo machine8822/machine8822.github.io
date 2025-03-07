@@ -183,7 +183,7 @@ function tableInput() {
 
 
 const getEquip = async () => {
-    const url = "https://machine8822.github.io/json/items.json";
+    const url = "https://machine8822.github.io/json/equip.json";
     
     try {
         const response = await fetch(url);

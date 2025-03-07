@@ -1,0 +1,21 @@
+[
+    {
+        "_id": "1",
+        "name": "Mower",
+        "description": "Useful for cutting the grass when it gets too tall.",
+        "price": "129.99",
+        "rating": "4.2",
+        "img1": "https://machine8822.github.io/project/part6/images/mower.png",
+        "img2": "https://machine8822.github.io/project/part6/images/placeholder.jpg"
+    },
+    {
+        "_id": "2",
+        "name": "Rake",
+        "description": "Useful for moving leaves into a pile.",
+        "price": "9.99",
+        "rating": "3.4",
+        "img1": "https://machine8822.github.io/project/part6/images/rake.png",
+        "img2": "https://machine8822.github.io/project/part6/images/placeholder.jpg"
+    }
+
+]
