@@ -69,7 +69,7 @@ function addCart() {
         cartMessage.innerHTML = test;
         localStorage.setItem("cart-out", JSON.stringify(cartArray));
 
-    }/*
+    }
     document.querySelector(".edger-cart").onclick = function (){
         let temp = ["Edger", edg];
         let test = "";
@@ -103,7 +103,7 @@ function addCart() {
         localStorage.setItem("cart-out", JSON.stringify(cartArray));
 
     }
-        */
+        
 }
 if(title.localeCompare(plants) === 0 ){
     document.querySelector(".mulch-cart").onclick = function (){
@@ -241,10 +241,38 @@ const getEquipItem = (equip1) => {
         });
         section.append(butItem);
     }
+    if(equip1._id === "3") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("edger-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+    if(equip1._id === "4") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("leaf-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+    if(equip1._id === "5") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("spread-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
 
     
-
-
     return section;
 };
 const getLi = data => {

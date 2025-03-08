@@ -32,8 +32,18 @@
         "description": "Useful for blowing leaves wherever you need to.",
         "price": "38.99",
         "rating": "3.3",
-        "img1": "https://machine8822.github.io/project/part6/images/edger.png",
+        "img1": "https://machine8822.github.io/project/part6/images/leafblower.png",
+        "img2": "https://machine8822.github.io/project/part6/images/placeholder.jpg"
+    },
+    {
+        "_id": "5",
+        "name": "Spreader",
+        "description": "Useful for spreading pesticide and other chemicals over a wide area.",
+        "price": "49.99",
+        "rating": "2.7",
+        "img1": "https://machine8822.github.io/project/part6/images/spreader.png",
         "img2": "https://machine8822.github.io/project/part6/images/placeholder.jpg"
     }
+    
 
 ]
