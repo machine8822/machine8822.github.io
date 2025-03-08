@@ -28,8 +28,8 @@ body {
 }
 
 #main-content img{
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
     display: flex;
     margin-left: auto;
@@ -45,17 +45,29 @@ body {
 /* JSON */
 #mow-section, #plant-section{
     background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 15px;
 }
 #mow-section h3, #plant-section h3{
     text-align: center;
-    
+    font-size: 30px;
+}
+#mow-section li, #plant-section li {
+    margin: 5px;
+    font-size: 20px;
 }
 #mow-section button, #plant-section button{
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    margin-bottom: 10px;
+    width: 150px;
+    background-color: greenyellow;
+}
+#mow-section footer, #plant-section footer{
+    background-color: greenyellow;
+    color: greenyellow;
 }
 
 /* Main Navigation */
@@ -67,6 +79,7 @@ body {
     border-radius: 10px;
     margin:10px;
 }
+
 
 #main-nav a {
     text-decoration: none;

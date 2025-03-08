@@ -262,7 +262,9 @@ const getPlantItem = (plant1) => {
         section.append(butItem);
     }
     
-
+    let footer = document.createElement("footer");
+    footer.innerHTML = "`";
+    section.append(footer);
     
     return section;
 };
@@ -354,6 +356,10 @@ const getEquipItem = (equip1) => {
         });
         section.append(butItem);
     }
+
+    let footer = document.createElement("footer");
+    footer.innerHTML = "`";
+    section.append(footer);
 
     
     return section;
