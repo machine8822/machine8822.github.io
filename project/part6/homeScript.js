@@ -183,7 +183,90 @@ function tableInput() {
 }
 
 
-//JSON AREA
+//JSON Plant Area
+const getPlant = async () => {
+    const url = "https://machine8822.github.io/json/plants.json";
+    
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch (error) {
+        console.log(error);
+    }
+};
+const showPlant = async () => {
+    let plant1 = await getPlant();
+    let plantSection = document.getElementById("plant-section");
+
+    plant1.forEach((plant1) => {
+        //console.log(equip1);
+        plantSection.append(getEquipItem(plant1));
+    });
+
+    //console.log(equip1);
+};
+const getPlantItem = (plant1) => {
+    let section = document.createElement("section");
+
+    let h3 = document.createElement("h3");
+    h3.innerText = plant1.name;
+    section.append(h3);
+
+    let ul = document.createElement("ul");
+    section.append(ul);
+    ul.append(getLi(plant1.description));
+    ul.append(getLi(`Price: $${plant1.price}`));
+    ul.append(getLi(`Rating: ${plant1.rating}`));
+    
+    let picItem = document.createElement("img");
+    picItem.src = plant1.img1;
+    section.append(picItem);
+    if(plant1._id === "1") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("mulch-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+    if(plant1._id === "2") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("straw-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+    if(plant1._id === "3") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("tree-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+    if(plant1._id === "4") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("flower-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+    
+
+    
+    return section;
+};
+//JSON Equip Area
 const getEquip = async () => {
     const url = "https://machine8822.github.io/json/equip.json";
     
@@ -339,6 +422,7 @@ window.onload = () => {
    }
    if(title.localeCompare(plants) === 0) {
     //alert("plants");
+    showPlant();
         document.getElementById("mulch").onpointerdown = addCart;
         document.getElementById("straw").onpointerdown = addCart;
         document.getElementById("tree").onpointerdown = addCart;

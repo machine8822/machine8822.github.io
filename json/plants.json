@@ -29,7 +29,7 @@
     {
         "_id": "4",
         "name": "Flowers",
-        "description": "Roses are out speciality, especially around this time.",
+        "description": "Roses are our speciality, especially around this time.",
         "price": "6.99",
         "rating": "3.3",
         "img1": "https://machine8822.github.io/project/part6/images/flower.jpg",
