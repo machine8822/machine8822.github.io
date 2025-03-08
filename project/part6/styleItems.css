@@ -42,6 +42,21 @@ body {
     border-radius: 5px;
     text-align: center;
 }
+/* JSON */
+#mow-section {
+    background-color: antiquewhite;
+}
+#mow-section h3 {
+    text-align: center;
+    
+}
+#mow-section button {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 /* Main Navigation */
 #main-nav li {

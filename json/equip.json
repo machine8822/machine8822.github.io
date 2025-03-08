@@ -16,6 +16,24 @@
         "rating": "3.4",
         "img1": "https://machine8822.github.io/project/part6/images/rake.png",
         "img2": "https://machine8822.github.io/project/part6/images/placeholder.jpg"
+    },
+    {
+        "_id": "3",
+        "name": "Edger",
+        "description": "Useful for trimming up the edge of the grass.",
+        "price": "99.99",
+        "rating": "4.4",
+        "img1": "https://machine8822.github.io/project/part6/images/edger.png",
+        "img2": "https://machine8822.github.io/project/part6/images/placeholder.jpg"
+    },
+    {
+        "_id": "4",
+        "name": "Leaf Blower",
+        "description": "Useful for blowing leaves wherever you need to.",
+        "price": "38.99",
+        "rating": "3.3",
+        "img1": "https://machine8822.github.io/project/part6/images/edger.png",
+        "img2": "https://machine8822.github.io/project/part6/images/placeholder.jpg"
     }
 
 ]

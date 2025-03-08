@@ -24,6 +24,7 @@ const toggleCartDropdown = () => {
 
 //Add item to cart ased on button pushed
 function addCart() {
+    alert("Adding to cart");
     const mow = 129.99;
     const rak = 9.99;
     const edg = 99.99;
@@ -68,7 +69,7 @@ function addCart() {
         cartMessage.innerHTML = test;
         localStorage.setItem("cart-out", JSON.stringify(cartArray));
 
-    }
+    }/*
     document.querySelector(".edger-cart").onclick = function (){
         let temp = ["Edger", edg];
         let test = "";
@@ -102,6 +103,7 @@ function addCart() {
         localStorage.setItem("cart-out", JSON.stringify(cartArray));
 
     }
+        */
 }
 if(title.localeCompare(plants) === 0 ){
     document.querySelector(".mulch-cart").onclick = function (){
@@ -181,7 +183,7 @@ function tableInput() {
 }
 
 
-
+//JSON AREA
 const getEquip = async () => {
     const url = "https://machine8822.github.io/json/equip.json";
     
@@ -192,12 +194,65 @@ const getEquip = async () => {
         console.log(error);
     }
 };
-//Display for equip
 const showEquip = async () => {
-    let what = getEquip();
+    let equip1 = await getEquip();
+    let mowerSection = document.getElementById("mow-section");
 
-    console.log(what);
+    equip1.forEach((equip1) => {
+        //console.log(equip1);
+        mowerSection.append(getEquipItem(equip1));
+    });
+
+    //console.log(equip1);
 };
+const getEquipItem = (equip1) => {
+    let section = document.createElement("section");
+
+    let h3 = document.createElement("h3");
+    h3.innerText = equip1.name;
+    section.append(h3);
+
+    let ul = document.createElement("ul");
+    section.append(ul);
+    ul.append(getLi(equip1.description));
+    ul.append(getLi(`Price: $${equip1.price}`));
+    ul.append(getLi(`Rating: ${equip1.rating}`));
+    
+    let picItem = document.createElement("img");
+    picItem.src = equip1.img1;
+    section.append(picItem);
+    if(equip1._id === "1") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("mower-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+    if(equip1._id === "2") {
+        //alert(equip1._id);
+        let butItem = document.createElement("button");
+        butItem.textContent = "Add to Cart";
+        butItem.classList.add("rake-cart");
+        butItem.addEventListener("click", function() {
+            addCart();
+        });
+        section.append(butItem);
+    }
+
+    
+
+
+    return section;
+};
+const getLi = data => {
+    const li = document.createElement("li");
+    li.textContent = data;
+    return li;
+}
+let mower;
 
 let cartArray = [];
 //let cartTotal = [];
