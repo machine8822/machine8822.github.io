@@ -43,14 +43,14 @@ body {
     text-align: center;
 }
 /* JSON */
-#mow-section {
+#mow-section, #plant-section{
     background-color: antiquewhite;
 }
-#mow-section h3 {
+#mow-section h3, #plant-section h3{
     text-align: center;
     
 }
-#mow-section button {
+#mow-section button, #plant-section button{
     text-align: center;
     display: block;
     margin-left: auto;

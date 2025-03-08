@@ -24,7 +24,7 @@ const toggleCartDropdown = () => {
 
 //Add item to cart ased on button pushed
 function addCart() {
-    alert("Adding to cart");
+    //alert("Adding to cart");
     const mow = 129.99;
     const rak = 9.99;
     const edg = 99.99;
@@ -200,7 +200,7 @@ const showPlant = async () => {
 
     plant1.forEach((plant1) => {
         //console.log(equip1);
-        plantSection.append(getEquipItem(plant1));
+        plantSection.append(getPlantItem(plant1));
     });
 
     //console.log(equip1);
@@ -423,10 +423,10 @@ window.onload = () => {
    if(title.localeCompare(plants) === 0) {
     //alert("plants");
     showPlant();
-        document.getElementById("mulch").onpointerdown = addCart;
-        document.getElementById("straw").onpointerdown = addCart;
-        document.getElementById("tree").onpointerdown = addCart;
-        document.getElementById("flower").onpointerdown = addCart;
+       // document.getElementById("mulch").onpointerdown = addCart;
+        //document.getElementById("straw").onpointerdown = addCart;
+       // document.getElementById("tree").onpointerdown = addCart;
+        //document.getElementById("flower").onpointerdown = addCart;
    }
    if(title.localeCompare(check) === 0) {
     //alert("checkout");
