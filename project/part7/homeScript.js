@@ -24,7 +24,7 @@ const toggleCartDropdown = () => {
 
 //Add item to cart ased on button pushed
 function addCart() {
-    //alert("Adding to cart");
+    console.log("addCart");
     const mow = 129.99;
     const rak = 9.99;
     const edg = 99.99;
@@ -364,6 +364,7 @@ const getEquipItem = (equip1) => {
         section.append(butItem);
     }
 
+    //footer is there for a divider
     let footer = document.createElement("footer");
     footer.innerHTML = "`";
     section.append(footer);
@@ -395,7 +396,7 @@ window.onload = () => {
     cartTotal = localStorage.getItem("cart-out");
     cartTesting = JSON.parse(cartTotal);
 
-    //showEquip();
+    
 
 
     //alert(cartTesting.length);
@@ -437,10 +438,6 @@ window.onload = () => {
    if(title.localeCompare(plants) === 0) {
     //alert("plants");
     showPlant();
-       // document.getElementById("mulch").onpointerdown = addCart;
-        //document.getElementById("straw").onpointerdown = addCart;
-       // document.getElementById("tree").onpointerdown = addCart;
-        //document.getElementById("flower").onpointerdown = addCart;
    }
    if(title.localeCompare(check) === 0) {
     //alert("checkout");
