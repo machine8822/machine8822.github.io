@@ -29,22 +29,13 @@
     margin-right:auto;
 }
 
+#assignSect h1, #projSect h1 {
+    text-align: center;
+}
+
 /* Navigation */
-/*
-#main-nav ul{
-    padding-left: 0;
-}
-#main-nav li{
-    list-style-type: none;
-    padding: 5px;
-    background-color: lightcoral;
-    border-bottom: 1px solid blanchedalmond;
-}
-#main-nav a{
-    text-decoration: none;
-    color: black;
-}
-*/
+
+
 /* Typography */
 body{
     font-family: Arial, Helvetica, sans-serif;
