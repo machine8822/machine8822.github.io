@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title id="title">Checkout</title>
+        <link rel="stylesheet" href="styleCheckout.css" />
+        <script src="homeScript.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <h1>King Landscaping</h1>
+                <nav id="main-nav">
+                    <div id="nav-toggle">
+                        <div id="arrow"></div>
+                    </div>
+                    <ul id="main-nav-items" class="hidden">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutStore.html">About Store</a></li>
+                        <li><a href="equipment.html">Equipment</a></li>
+                        <li><a href="plants.html">Plants</a></li>
+                    </ul>
+                    <div id="cart-toggle">
+                        <div id="arrow2"></div>
+                        <div id="cart" class="hidden-cart">
+                            <p id="cart-txt">No items in Cart</p>
+                            <button id="reset" class="empty-cart">Empty Cart</button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main id="main-content">
+                <section>
+                    <div class="flex-container">
+                        <table>
+                            <tr>
+                                <th>Cart Items</th>
+                                <th>Individual Prices</th>
+                            </tr>
+                            <tr>
+                                <td id="item-name">Item</td>
+                                <td id="item-price">Price</td>
+                            </tr>
+                        </table>
+                </section>
+                    <p id="final-total">Total Price: $0</p>
+                    <button id="checkout" class="checkout-cart">Checkout</button>
+                    <img src="images/logoFinal.png" alt="Not working">
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
