@@ -29,12 +29,7 @@
     margin-right:auto;
 }
 
-#assignSect h1, #projSect h1 {
-    text-align: center;
-}
-
 /* Navigation */
-
 
 /* Typography */
 body{
@@ -43,14 +38,21 @@ body{
 #main-header h1{
     text-align: center;
 }
+#assignSect h1, #projSect h1 {
+    text-align: center;
+}
+#txt-items li{
+    list-style-type: none;
+    
+}
 
 /* Larger Resolutions */
-@media (min-width: 900px){
-    #main-nav ul, .flex-container{
+@media (min-width: 1100px){
+    .flex-container{
         display: flex;
     }
 
-    #main-nav li, .col1of3{
+    .col1of3{
         flex: 1;
     }
 }
