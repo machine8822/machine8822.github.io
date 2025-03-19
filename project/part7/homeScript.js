@@ -37,7 +37,7 @@ function addCart() {
     const flo = 6.99;
     
 
-    const cartMessage = document.getElementById("cart-txt");
+    cartMessage = document.getElementById("cart-txt");
 
     //When mower button is clicked
     if(title.localeCompare(equip) === 0 ){
@@ -109,7 +109,7 @@ function addCart() {
             localStorage.setItem("cart-out", JSON.stringify(cartArray));
 
         }
-        
+    
     }
     if(title.localeCompare(plants) === 0 ){
         document.querySelector(".mulch-cart").onclick = function (){
@@ -233,7 +233,17 @@ const getPlantItem = (plant1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("mulch-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [plant1.name, plant1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -243,7 +253,17 @@ const getPlantItem = (plant1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("straw-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [plant1.name, plant1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -253,7 +273,17 @@ const getPlantItem = (plant1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("tree-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [plant1.name, plant1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -263,7 +293,17 @@ const getPlantItem = (plant1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("flower-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [plant1.name, plant1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -274,6 +314,7 @@ const getPlantItem = (plant1) => {
     
     return section;
 };
+
 //JSON Equip Area
 const getEquip = async () => {
     const url = "https://machine8822.github.io/json/equip.json";
@@ -312,14 +353,31 @@ const getEquipItem = (equip1) => {
     let picItem = document.createElement("img");
     picItem.src = equip1.img1;
     section.append(picItem);
+
+    //console.log(equip1);
+
+
     if(equip1._id === "1") {
         //alert(equip1._id);
         let butItem = document.createElement("button");
         butItem.textContent = "Add to Cart";
         butItem.classList.add("mower-cart");
         butItem.addEventListener("click", function() {
-            addCart();
-            console.log("Adding Mower1");
+            //addCart();
+            //console.log("Adding Mower1");
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [equip1.name, equip1.price];
+            let test = "";
+            cartArray.push(temp);
+            //alert("mower");
+            //alert(cartArray.length);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -329,7 +387,17 @@ const getEquipItem = (equip1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("rake-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [equip1.name, equip1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -339,7 +407,17 @@ const getEquipItem = (equip1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("edger-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [equip1.name, equip1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -349,7 +427,17 @@ const getEquipItem = (equip1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("leaf-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [equip1.name, equip1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -359,7 +447,17 @@ const getEquipItem = (equip1) => {
         butItem.textContent = "Add to Cart";
         butItem.classList.add("spread-cart");
         butItem.addEventListener("click", function() {
-            addCart();
+            //addCart();
+            cartMessage = document.getElementById("cart-txt");
+            let temp = [equip1.name, equip1.price];
+            let test = "";
+            cartArray.push(temp);
+            for(let i=0; i<cartArray.length; i++){
+                test = test + "\n" + cartArray[i];
+                //alert(test);
+            }
+            cartMessage.innerHTML = test;
+            localStorage.setItem("cart-out", JSON.stringify(cartArray));
         });
         section.append(butItem);
     }
@@ -378,7 +476,8 @@ const getLi = data => {
     return li;
 }
 let mower;
-
+let loading;
+let cartMessage;
 let cartArray = [];
 //let cartTotal = [];
 window.onload = () => {
@@ -395,7 +494,7 @@ window.onload = () => {
     
     cartTotal = localStorage.getItem("cart-out");
     cartTesting = JSON.parse(cartTotal);
-
+    loading = 0;
     
 
 

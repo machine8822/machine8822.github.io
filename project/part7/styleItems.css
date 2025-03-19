@@ -95,11 +95,10 @@ body {
     border: solid 10px;
     border-color: black transparent transparent transparent;
 }
-#arrow2 {
-    width: 0;
-    height: 0;
-    border: solid 10px;
-    border-color: red transparent transparent transparent;
+#arrow2 img {
+    width: 40px;
+    height: 40px;
+    
     margin-left: 95%;
 }
 .hidden {
