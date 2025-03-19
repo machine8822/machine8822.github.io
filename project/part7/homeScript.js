@@ -166,6 +166,7 @@ let equip = "Equipment";
 let plants = "Plants";
 let check = "Checkout";
 
+//Checkout Area
 function tableInput() {
     let iN = document.getElementById("item-name");
     let iP = document.getElementById("item-price");
@@ -179,12 +180,12 @@ function tableInput() {
         test = test + "\n" + cartArray[i][0];
         final = final + "\n"+ cartArray[i][1];
         let num = cartArray[i][1];
-        final2 = parseFloat(final2) + parseFloat(num);
+        final2 = parseFloat(final2, ) + parseFloat(num, 2);
         //alert(final2);
     }
     iN.innerHTML = test;
     iP.innerHTML = final;
-    fT.innerHTML = "Total Price: $" + final2;
+    fT.innerHTML = "Total Price: $" + final2.toFixed(2);
     
 }
 
