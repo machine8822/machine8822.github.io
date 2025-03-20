@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Embed Testing</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <div id="content">
+        <header id="main-header">
+            <h1>Best Website Ever</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pictures</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <textarea name="message" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                    <button type="submit">Submit Form</button>
+                
+                    <div id="result"></div>
+                
+                </form>
+            </section>
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13232.137142272533!2d-81.02025255!3d33.9916531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bada42720547%3A0x76fc4c4a4dda69e7!2sBates%20House!5e0!3m2!1sen!2sus!4v1742476674138!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+        <footer><p>&copy; machineking.com</p></footer>
+    </div>        
+    </body>
+</html>
