@@ -1,6 +1,6 @@
 const form = document.getElementById("form");
 const result = document.getElementById('result');
-
+const hidden = document.getElementById("contact-Section");
 
 form.addEventListener("submit", function(e) {
   e.preventDefault();
@@ -34,6 +34,7 @@ form.addEventListener("submit", function(e) {
             form.reset();
             setTimeout(() => {
                 result.style.display = "none";
-            }, 3000);
+                hidden.classList.toggle("hidden-Contact");
+            }, 2000);
         });
 });

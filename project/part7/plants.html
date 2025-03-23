@@ -34,6 +34,31 @@
                 <h2>Plants</h2>
                 <div id="plant-section"></div>
             </main>
+            <footer id="main-footer">
+                <button id="formBut" type="button">Contact Form</button>
+                <section id="contact-Section" class="hidden-Contact">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="3628413e-725e-4249-9193-75c1465dda18">
+                        <h1>Contact Me:</h1>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="message">Your Message:</label>
+                            <textarea name="message" required></textarea>
+                        </p>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <button type="submit">Submit Form</button>
+                        <div id="result"></div>
+                    </form>
+                </section>
+            </footer>
         </div>
+        <script src="form.js"></script>
     </body>
 </html>

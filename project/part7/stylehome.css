@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /*background-color: gray; */
     background-image: url("images/lawn.webp");
+    background-size: cover;
 }
 
 #content {
@@ -13,7 +14,6 @@ body {
 #main-content h2 {
     font-size: 50px;
     top: 50px;
-    
 }
 
 #main-content p {
@@ -31,7 +31,7 @@ body {
 #main-content img{
     width: 400px;
     height: 300px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -43,11 +43,35 @@ body {
     border-radius: 5px;
     text-align: center;
 }
+/* Contact Form */
+#contact-Section {
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact-Section h1{
+    text-align: center;
+}
+.hidden-Contact {
+    display: none;
+}
+#main-footer button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: block;
+    padding: 5px;
+}
+form label {
+    display: block;
+}
 
 /* Main Navigation */
 #main-nav li {
     list-style-type: none;
-    
     text-align: center;
     background-color: aqua;
     border-radius: 10px;
@@ -81,7 +105,6 @@ body {
 #arrow2 img {
     width: 40px;
     height: 40px;
-    
     margin-left: 95%;
 }
 .hidden {
@@ -101,7 +124,7 @@ body {
 
 /* Activates when width > 900 */
 @media (min-width: 900px){
-    #main-nav ul, .flex-container{
+    #main-nav ul, .flex-container {
         display:flex;
     }
     #main-nav li, #cart p {

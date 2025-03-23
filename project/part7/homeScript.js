@@ -21,6 +21,11 @@ const toggleCartDropdown = () => {
     dropDown.classList.toggle("hidden-cart");
     //alert("cartdropdown");
 }
+const toggleContactForm = () => {
+    const contactForm = document.getElementById("contact-Section");
+    //alert("Toggle Contact");
+    contactForm.classList.toggle("hidden-Contact");
+}
 
 //Add item to cart ased on button pushed
 function addCart() {
@@ -550,6 +555,7 @@ window.onload = () => {
     document.getElementById("nav-toggle").onpointerdown = toggleNavDropdown;
     document.getElementById("arrow2").onpointerdown = toggleCartDropdown;
     document.getElementById("reset").onpointerdown = emptyCart;
+    document.getElementById("formBut").onpointerdown = toggleContactForm;
  /*   document.getElementById("mower").onpointerdown = addCart;
     document.getElementById("rake").onpointerdown = addCart;
     document.getElementById("edger").onpointerdown = addCart;
