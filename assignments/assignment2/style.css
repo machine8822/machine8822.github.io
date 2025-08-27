@@ -1,0 +1,16 @@
+/* Structure */
+#main-content img {
+    height: 200px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Typography */
+body {
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-header h1, #main-content p, #main-content h2 {
+    color: blue;
+}

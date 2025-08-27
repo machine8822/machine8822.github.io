@@ -1,0 +1,20 @@
+/* Structure */
+
+/* Navigation */
+#main-nav li {
+    list-style-type: none;
+}
+#main-nav a, #main-content a {
+    text-decoration: none;
+    color: purple;
+    padding: 10px;
+}
+
+/* Typography */
+body {
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-header h1, #main-content p, #main-content h2 {
+    color: blue;
+}
