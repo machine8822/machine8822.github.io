@@ -1,4 +1,21 @@
 /* Structure */
+body {
+    background-color: green;
+}
+.box {
+    background-color: rgb(209, 54, 54);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+.box img {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Navigation */
 #main-nav li {
@@ -12,9 +29,22 @@
 
 /* Typography */
 body {
-    background-color: green;
     font-family: Arial, Helvetica, sans-serif;
 }
-#main-header h1, #main-content p, #main-content h2 {
+#main-header h1, #main-content h2 {
     color: blue;
+    text-align: center;
+}
+.box h3, .box p {
+    text-align: center;
+}
+
+/* Flexing */
+@media (min-width: 1100px){
+    .flex-container {
+        display: flex;
+    }
+    .box {
+        flex:1;
+    }
 }
