@@ -1,0 +1,207 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+#main-header h1 {
+    text-align: right;
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+/* Flex-nav */
+.flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: red;
+}
+.flex-nav p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Flex-first */
+.flex-first {
+    background-image: url('placeholder.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+.flex-first h3 {
+    color: red;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    padding-top: 250px;
+    
+}
+/* Flex-second */
+.flex-second {
+    height: 200px;
+    background-color: white;
+}
+.flex-second p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Flex-third */
+.flex-third {
+    background-color: red;
+    display: flex;
+    flex: 1;
+}
+.flex-third section {
+    width: 50%;
+}
+.flex-third img {
+    width: 100%;
+    height: auto;
+}
+.flex-third h4 {
+    color: white;
+    font-size: 24px;
+}
+.flex-third p {
+    color: white;
+}
+
+/*Flex-fourth */
+.flex-fourth {
+    background-color: white;
+}
+.flex-fourth h3 {
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+    font-size: 40px;
+}
+.flex-fourth p {
+    text-align: center;
+}
+.thirds {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.thirds p {
+    background-color: red;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Flex-fifth */
+.flex-fifth {
+    height: 400px;
+    background-image: url('placeholder.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+.flex-fifth h3{
+    color: white;
+    padding-top: 200px;
+    padding-left: 350px;
+}
+.flex-fifth p {
+    color: white;
+    padding-left: 350px;
+}
+
+/* Flex-sixth */
+.flex-sixth {
+    background-color: red;
+    display: flex;
+    flex: 1;
+}
+.flex-sixth section {
+    width: 50%;
+}
+.flex-sixth img{
+    width: 100%;
+}
+.flex-sixth p {
+    color: white;
+    font-size: 20px;
+}
+
+/* Flex-seventh */
+.flex-seventh {
+    background-color: aqua;
+    display: flex;
+    flex: 1;
+}
+.flex-seventh section {
+    width: 50%;
+}
+.flex-seventh img {
+    width: 100%;
+}
+.flex-seventh h3 {
+    color: white;
+    font-size: 40px;
+    padding-left: 5px;
+}
+.flex-seventh p {
+    color: white;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+/* Flex-eigth */
+.flex-eigth {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.flex-eigth section {
+    width: 33%;
+}
+.flex-eigth img {
+    width: 100%;
+}
+body h2 {
+    color: red;
+    text-align: center;
+}
+
+/* Flex-ninth */
+.flex-ninth {
+    background-color: black;
+    display: flex;
+    flex: 1;
+}
+.flex-ninth section {
+    width: 50%;
+}
+.flex-ninth img {
+    width: 100%;
+}
+.flex-ninth h3 {
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.flex-ninth p {
+    padding-left: 20px;
+    color: white;
+}
+
+/* Flex-tenth */
+.flex-tenth h3 {
+    color: red;
+    text-align: center;
+    padding-top: 30px;
+}
+
