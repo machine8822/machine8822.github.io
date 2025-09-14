@@ -1,0 +1,83 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+}
+#main-header h1, #main-header h2{
+    text-align: center;
+}
+.main-flex h3 {
+   text-align: center;
+   padding:10px;
+}
+.main-flex section {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(146, 132, 94);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+.hidden {
+    display: none;
+}
+/* Sunny */
+#sunny {
+    background-color: yellow;
+    width:300px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first-ind {
+    margin-left: 10px;
+}
+.second-ind {
+    margin-left: 20px;
+}
+.third-ind {
+    margin-left: 30px;
+}
+
+/* Color */
+#color {
+    background-color: yellow;
+    width:300px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* img change */
+#imgchange {
+    background-color: yellow;
+    width:300px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cloudy-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sunny-img {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Large screens */
+@media (min-width: 1100px) {
+    .main-flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
