@@ -48,7 +48,7 @@ const exercise2 = () => {
     if(hour > 12){
         hour = hour - 12;
     }
-    clockText.innerHTML = "The current time is " + hour + ":" + (minute < 10 ? '0' : '') + minute;
+    clockText.innerHTML = hour + ":" + (minute < 10 ? '0' : '') + minute;
 };
 
 const toggleDropdown = () => {
