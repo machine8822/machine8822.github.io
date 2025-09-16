@@ -1,0 +1,92 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+}
+#main-header h1, #main-header h2{
+    text-align: center;
+}
+#main-nav a {
+    text-align: center;
+    padding: 5px;
+    color: red;
+    text-decoration: none;
+}
+#main-nav a:hover {
+    cursor: pointer;
+}
+#main-nav li {
+    list-style-type: none;
+}
+footer {
+    text-align: center;
+}
+#arrow {
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: black transparent transparent transparent;
+}
+.hidden {
+    display: none;
+}
+
+/* Exercise 1 */
+#exercise1 {
+    background-color: gray;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#exercise1 p {
+    text-align: center;
+    padding: 10px;
+}
+#exercise1 input {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px;
+}
+#exercise1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100px;
+}
+
+/* Exercise 2 */
+#exercise2 {
+    background-color: gray;
+    width: 80%;
+    height: auto;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#exercise2 h2 {
+    text-align: center;
+    padding: 10px;
+}
+#exercise2 p {
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (min-width: 1100px) {
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #lst:last-child::before {
+        content: " | ";
+    }
+    #arrow {
+        display: none;
+    }
+    
+}
