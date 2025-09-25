@@ -1,0 +1,64 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+#main-header h1, #main-header h2 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
+.main-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#ger, #spam, #horn, #hollow {
+    background-color: white;
+    width: 20%;
+    height: 300px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+#gerText, #spamText, #hornText, #hollowText {
+    text-align: center;
+    margin-top: 260px;
+    display: none;
+    font-size: 20px;
+}
+
+
+/* Popup */
+#pop {
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    z-index: 1000;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    box-shadow: 10px 10px green;
+    position: relative;
+    right: -100px;
+    top: -100px;
+}
+#pop span {
+    display: block;
+    text-align: right;
+}
+#pop h4 {
+    text-align: center;
+    margin: 5px;
+}
+#popupImg {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100% 100%;
+    display: block;
+}
+
+
+
+
