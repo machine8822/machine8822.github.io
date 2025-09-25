@@ -1,0 +1,36 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+#main-header h1, #main-header h2{
+    text-align: center;
+    color: white;
+}
+#sceneBut {
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+footer p {
+    text-align: center;
+    margin-top: 400px;
+}
+
+
+/* Art */
+#painting {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#painting h4 {
+    color: black;
+}
+
