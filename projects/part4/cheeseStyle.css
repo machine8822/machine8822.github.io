@@ -1,6 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: pink;
+    background: repeating-linear-gradient(
+    to bottom,
+    red 0px, /* First color, starts at 0px */
+    pink 20px, /* First color, ends at 20px (stripe height) */
+    pink 20px, /* Second color, starts at 20px */
+    red 40px  /* Second color, ends at 40px (total pattern height) */
+  );
 }
 #main-content img {
     width: 60%;
@@ -34,15 +41,29 @@ body {
     color: white;
     text-decoration: none;
 }
+.hidden {
+    display: none;
+}
+#arrow {
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: black transparent transparent transparent;
+}
 
 /* Table */
 table {
     margin-left: auto;
     margin-right: auto;
+    
 }
 table, th, td {
     padding: 10px;
     text-align: center;
+}
+th, td {
+    border-top: 2px solid black;
+    background-color: red;
 }
 
 @media (min-width: 1100px) {
@@ -50,6 +71,9 @@ table, th, td {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    #arrow {
+        display: none;
     }
     
 }
