@@ -81,6 +81,144 @@ const showCheese = async () => {
     cheeseSect.appendChild(cheTable);
     console.log(che);
 };
+//JSON Wine
+const getWine = async() => {
+    const url = "https://machine8822.github.io/json/wine.json";
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch(error) {
+        console.log(error);
+    }
+};
+const showWine = async() => {
+    let win = await getWine();
+    let wineSect = document.getElementById("main-content");
+
+    const winTable = document.createElement("table");
+    const tHead = document.createElement("thead");
+    const headRow = document.createElement("tr");
+    
+    const th1 = document.createElement("th");
+    th1.textContent = "Image";
+    const th2 = document.createElement("th");
+    th2.textContent = "Name";
+    const th3 = document.createElement("th");
+    th3.textContent = "Type";
+    const th4 = document.createElement("th");
+    th4.textContent = "Location Produced";
+    const th5 = document.createElement("th");
+    th5.textContent = "Price";
+
+    headRow.appendChild(th1);
+    headRow.appendChild(th2);
+    headRow.appendChild(th3);
+    headRow.appendChild(th4);
+    headRow.appendChild(th5);
+    tHead.appendChild(headRow);
+    winTable.appendChild(tHead);
+
+    //Create table body; create new row for each item
+    const tBody = document.createElement("tbody");
+    win.forEach((win) => {
+        const row = document.createElement("tr");
+        const imgCell = document.createElement("td");
+        const img = document.createElement("img");
+        img.src = win.img1;
+        imgCell.appendChild(img);
+        row.appendChild(imgCell);
+
+        const nameCell = document.createElement("td");
+        nameCell.textContent = win.name;
+        row.appendChild(nameCell);
+
+        const typeCell = document.createElement("td");
+        typeCell.textContent = win.type;
+        row.appendChild(typeCell);
+
+        const locCell = document.createElement("td");
+        locCell.textContent = win.location;
+        row.appendChild(locCell);
+
+        const priceCell = document.createElement("td");
+        priceCell.textContent = win.price;
+        row.appendChild(priceCell);
+        
+        tBody.appendChild(row);
+    });
+    winTable.appendChild(tBody);
+    wineSect.appendChild(winTable);
+    console.log(win);
+};
+//JSON Cigars
+const getCigars = async() => {
+    const url = "https://machine8822.github.io/json/cigars.json";
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch(error) {
+        console.log(error);
+    }
+};
+const showCigars = async() => {
+    let cig = await getCigars();
+    let cigSect = document.getElementById("main-content");
+
+    const cigTable = document.createElement("table");
+    const tHead = document.createElement("thead");
+    const headRow = document.createElement("tr");
+    
+    const th1 = document.createElement("th");
+    th1.textContent = "Image";
+    const th2 = document.createElement("th");
+    th2.textContent = "Name";
+    const th3 = document.createElement("th");
+    th3.textContent = "Type";
+    const th4 = document.createElement("th");
+    th4.textContent = "Location Produced";
+    const th5 = document.createElement("th");
+    th5.textContent = "Price";
+
+    headRow.appendChild(th1);
+    headRow.appendChild(th2);
+    headRow.appendChild(th3);
+    headRow.appendChild(th4);
+    headRow.appendChild(th5);
+    tHead.appendChild(headRow);
+    cigTable.appendChild(tHead);
+
+    //Create table body; create new row for each item
+    const tBody = document.createElement("tbody");
+    cig.forEach((cig) => {
+        const row = document.createElement("tr");
+        const imgCell = document.createElement("td");
+        const img = document.createElement("img");
+        img.src = cig.img1;
+        imgCell.appendChild(img);
+        row.appendChild(imgCell);
+
+        const nameCell = document.createElement("td");
+        nameCell.textContent = cig.name;
+        row.appendChild(nameCell);
+
+        const typeCell = document.createElement("td");
+        typeCell.textContent = cig.type;
+        row.appendChild(typeCell);
+
+        const locCell = document.createElement("td");
+        locCell.textContent = cig.location;
+        row.appendChild(locCell);
+
+        const priceCell = document.createElement("td");
+        priceCell.textContent = cig.price;
+        row.appendChild(priceCell);
+        
+        tBody.appendChild(row);
+    });
+    cigTable.appendChild(tBody);
+    cigSect.appendChild(cigTable);
+    console.log(cig);
+};
 
 let title = document.title;
 window.onload = () => {
@@ -90,6 +228,12 @@ window.onload = () => {
     if(title.localeCompare("Cheese") === 0) {
         //alert("Cheese table loading");
         showCheese();
+    }
+    if(title.localeCompare("Wine") === 0) {
+        showWine();
+    }
+    if(title.localeCompare("Cigar") === 0) {
+        showCigars();
     }
 }
 
