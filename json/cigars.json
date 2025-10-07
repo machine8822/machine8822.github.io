@@ -1,0 +1,34 @@
+[
+    {
+        "_id":"1",
+        "img1":"https://machine8822.github.io/projects/part6/images/cigar1.jpg",
+        "name":"Cohiba Behike",
+        "type":"Premium Cigar",
+        "location":"Cuba",
+        "price":"$11.99"
+    },
+    {
+        "_id":"2",
+        "img1":"https://machine8822.github.io/projects/part6/images/cigar2.jpg",
+        "name":"Arturo Fuente Opus X",
+        "type":"Premium Cigar",
+        "location":"Dominican Republic",
+        "price":"$15.99"
+    },
+    {
+        "_id":"3",
+        "img1":"https://machine8822.github.io/projects/part6/images/cigar3.jpg",
+        "name":"Padrón 1964 Anniversary Series",
+        "type":"Premium Cigar",
+        "location":"Nicaragua",
+        "price":"$24.99"
+    },
+    {
+        "_id":"4",
+        "img1":"https://machine8822.github.io/projects/part6/images/cigar4.jpg",
+        "name":"Montecristo No. 2",
+        "type":"Premium Cigar",
+        "location":"Cuba",
+        "price":"$19.99"
+    }
+]
