@@ -1,15 +1,48 @@
 [
     {
         "_id":"1",
-        "img1":"https://machine8822.github.io/projects/part4/images/rouge.jpg",
-        "name":"Rouge",
+        "img1":"https://machine8822.github.io/projects/part6/images/rouge.jpg",
+        "name":"Ruby Rouge",
         "type":"Farmhouse Dutch Gouda",
         "location":"Netherlands",
         "aged":"6-7 months",
-        "price":"$12.99 per lb"
+        "price":"$12.99/lb"
     },
     {
-
+        "_id":"2",
+        "img1":"https://machine8822.github.io/projects/part6/images/Shropshire.jpg",
+        "name":"Shropshire Blue",
+        "type":"Blue Cheese",
+        "location":"England",
+        "aged":"3 months",
+        "price":"$9.99/lb"
+    },
+    {
+        "_id":"3",
+        "img1":"https://machine8822.github.io/projects/part6/images/Camembert.jpg",
+        "name":"Camembert",
+        "type":"Soft Cow Milk Cheese",
+        "location":"France",
+        "aged":"5-6 weeks",
+        "price":"$15.99/lb"
+    },
+    {
+        "_id":"4",
+        "img1":"https://machine8822.github.io/projects/part6/images/Appenzeller.jpg",
+        "name":"Appenzeller",
+        "type":"Hard Cow Milk Cheese",
+        "location":"Switzerland",
+        "aged":"3-6 months",
+        "price":"$19.99/lb"
+    },
+    {
+        "_id":"5",
+        "img1":"https://machine8822.github.io/projects/part6/images/Humboldt.jpg",
+        "name":"Humboldt Fog",
+        "type":"Goat Milk Cheese",
+        "location":"USA",
+        "aged":"2-3 weeks",
+        "price":"$11.99/lb"
     }
 
 ]
