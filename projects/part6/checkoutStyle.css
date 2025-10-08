@@ -4,13 +4,13 @@ body {
     background: repeating-linear-gradient(
     to bottom,
     red 0px, /* First color, starts at 0px */
-    pink 20px, /* First color, ends at 20px (stripe height) */
-    pink 20px, /* Second color, starts at 20px */
-    red 40px  /* Second color, ends at 40px (total pattern height) */
+    pink 500px, /* First color, ends at 20px (stripe height) */
+    pink 500px, /* Second color, starts at 20px */
+    red 1000px  /* Second color, ends at 40px (total pattern height) */
   );
 }
 #main-content img {
-    width: 40%;
+    width: 400px;
     height:auto;
     padding: 20px;
     display: flex;

@@ -109,12 +109,15 @@ const showWine = async() => {
     th4.textContent = "Location Produced";
     const th5 = document.createElement("th");
     th5.textContent = "Price";
+    const th6 = document.createElement("th");
+    th6.textContent = "Pairs well with"
 
     headRow.appendChild(th1);
     headRow.appendChild(th2);
     headRow.appendChild(th3);
     headRow.appendChild(th4);
     headRow.appendChild(th5);
+    headRow.appendChild(th6);
     tHead.appendChild(headRow);
     winTable.appendChild(tHead);
 
@@ -143,6 +146,10 @@ const showWine = async() => {
         const priceCell = document.createElement("td");
         priceCell.textContent = win.price;
         row.appendChild(priceCell);
+
+        const pairCell = document.createElement("td");
+        pairCell.textContent = win.pair;
+        row.append(pairCell);
         
         tBody.appendChild(row);
     });
@@ -219,6 +226,30 @@ const showCigars = async() => {
     cigSect.appendChild(cigTable);
     console.log(cig);
 };
+//Gallery
+let count = 0;
+function toggleGallery() {
+    const gall = document.getElementById("gallery");
+    
+    if(count === 0) {
+        gall.src = "images/wine5.jpg";
+        count++;
+        //alert("count0");
+        return;
+    }
+    if(count === 1) {
+        gall.src = "images/logoRed.png";
+        count++;
+        //alert("count1");
+        return;
+    }
+    if(count === 2) {
+        gall.src = "images/Humboldt.jpg";
+        count = 0;
+        //alert("count2")
+        return;
+    }
+}
 
 let title = document.title;
 window.onload = () => {
@@ -235,6 +266,8 @@ window.onload = () => {
     if(title.localeCompare("Cigar") === 0) {
         showCigars();
     }
+
+    document.getElementById("gallery").onpointerdown = toggleGallery;
 }
 
 
