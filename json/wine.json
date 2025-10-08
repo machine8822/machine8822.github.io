@@ -5,7 +5,8 @@
         "name":"Chateau Margaux",
         "type":"Red Wine",
         "location":"France",
-        "price":"$32.99"
+        "price":"$32.99",
+        "pair":"Lamb, beef, and duck"
     },
     {
         "_id":"2",
@@ -13,15 +14,17 @@
         "name":"Pahlmeyer Merlot",
         "type":"Red Wine",
         "location":"USA",
-        "price":"$27.99"
+        "price":"$27.99",
+        "pair":"Dark chocolate and duck"
     },
     {
         "_id":"3",
         "img1":"https://machine8822.github.io/projects/part6/images/wine3.jpg",
-        "name":"Antinor Tignanello",
+        "name":"Antinori Tignanello",
         "type":"Red Wine",
         "location":"Italy",
-        "price":"$45.99"
+        "price":"$45.99",
+        "pair":"Boar and cheese"
     },
     {
         "_id":"4",
@@ -29,6 +32,7 @@
         "name":"Domaine de la Romanee-Conti",
         "type":"Red Wine",
         "location":"France",
-        "price":"$23.99"
+        "price":"$23.99",
+        "pair":"Lamb and mushroom based dishes"
     }
 ]
