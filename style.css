@@ -38,6 +38,10 @@ body {
 .box h3, .box p {
     text-align: center;
 }
+footer p {
+    text-align: center;
+    color: red;
+}
 
 /* Flexing */
 @media (min-width: 1200px){
